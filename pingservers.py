@@ -1,4 +1,5 @@
 # This tool ping servers and send mail to notify down servers
+# Reference: http://stackoverflow.com/questions/64505/sending-mail-from-python-using-smtp
 
 import os
 import smtplib
