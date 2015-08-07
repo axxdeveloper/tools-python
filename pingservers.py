@@ -2,11 +2,15 @@
 # Reference: http://stackoverflow.com/questions/64505/sending-mail-from-python-using-smtp
 
 import os
+import sys
 import smtplib
 from email.MIMEMultipart import MIMEMultipart
 from email.MIMEText import MIMEText
 
-servers = ['192.168.0.116', '192.168.0.150', '192.168.0.151','192.168.0.153','192.168.0.216','192.168.0.89','192.168.0.85']
+if len(sys.argv) == 1:
+    sys.exit("Ex: python pingservers.py 192.168.0.116,192.168.0.150,192.168.0.151,192.168.0.153,192.168.0.216,192.168.0.89,192.168.0.85")
+    
+servers = list(str(sys.argv[1]).split(','))
 upservers = []
 downservers = []
 
