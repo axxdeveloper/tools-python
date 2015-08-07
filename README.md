@@ -2,7 +2,7 @@
 ## pingservers.py
 Ping specified IPs, send mail when IPs were down.<br />
 Ex. <br />
-python pingservers.py 192.168.0.116,192.168.0.150,192.168.0.151,192.168.0.153,192.168.0.216,192.168.0.89,192.168.0.85 <br/>
+python pingservers.py 192.168.0.1,192.168.0.2 <br/>
 ## splitfile.py
 Split large file to smallers, every smaller file contains 100000 lines.<br /><br />
 Ex. <br />
