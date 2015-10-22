@@ -17,5 +17,8 @@ largefile.5.log<br />
 ## print_previousline_by_keyword.py
 Iterate a path to find a keyword.<br />
 Print the found line and previous line<br />
-Ex. <br />
-python print_previousline_by_keyword.py D:\logs\ Exception<br />
+Ex. python print_previousline_by_keyword.py D:\logs\ Exception<br />
+## search_keyword.py
+1. Search keyword1 in all files<br />
+2. Search keyword2 in all files, print line when keyword1 was same as keyword2<br />
+Ex. python search_keyword.py D:\isaac\download\_\plat "BasePlayValidateFilter.* clientJID=(?P<keyword1>.+)/.+" "play\. .+clientJID:(?P<keyword2>.+)/.+"
