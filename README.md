@@ -17,3 +17,5 @@ largefile.5.log<br />
 ## print_previousline_by_keyword.py
 Iterate a path to find a keyword.<br />
 Print the found line and previous line<br />
+Ex. <br />
+python print_previousline_by_keyword.py D:\logs\ Exception<br />
