@@ -14,3 +14,6 @@ largefile.3.log<br />
 largefile.4.log<br />
 largefile.5.log<br />
 ...etc<br />
+## print_previousline_by_keyword.py
+Iterate a path to find a keyword.<br />
+Print the found line and previous line<br />

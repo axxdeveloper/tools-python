@@ -5,7 +5,7 @@ import re
 import itertools
 
 if len(sys.argv) != 3:
-    sys.exit("please specify filepath and search keyword. Ex. python listpreviousline.py #{filepath} #{searchKeyword1}")
+    sys.exit("please specify filepath and search keyword. Ex. python print_previousline_by_keyword.py #{filepath} #{searchKeyword1}")
     
 filepath = sys.argv[1];
 keyword = sys.argv[2]
