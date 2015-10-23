@@ -23,3 +23,6 @@ The behavior is just like "grep & grep again" <br />
 1. Search keyword1 in all files<br />
 2. Search keyword2 in all files, print line when keyword1 was same as keyword2<br />
 Ex. python search_keyword.py D:\logs\ "Exception.* clientJID=(?P\<keyword1\>.+)/.+" "play\\. .+clientJID:(?P\<keyword2\>.+)/.+"
+## print_keyword_only.py
+Search specified keyword regular expression<br />
+Ex. python print_keyword.py D:\logs "=clientJID=(?P<keyword>.+)/.+"
