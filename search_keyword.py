@@ -26,7 +26,8 @@ for subdir, dirs, filenames in os.walk(filepath):
             for line in file:
                 m = re.search(keyword1,line)
                 if m != None:
-                    print line
+                    print(previousLine),
+                    print(line),
                     keyword1file.write(m.group('keyword1') + '\n')
                 previousLine = line
 print keyword1file.name
@@ -44,7 +45,7 @@ for subdir, dirs, filenames in os.walk(filepath):
                 keyword1file.seek(0,0)
                 for keyword1 in keyword1file:
                     if keyword1.strip() == m.group('keyword2').strip():
-                        print line
+                        print(line),
     
 keyword1file.close()
 
