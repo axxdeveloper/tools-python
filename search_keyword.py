@@ -23,10 +23,10 @@ for subdir, dirs, filenames in os.walk(filepath):
 
         previousLine = ''
         with open(absoluteFilePath) as file:
-            for line in file.readlines():
+            for line in file:
                 m = re.search(keyword1,line)
                 if m != None:
-                    print m.group('keyword1')
+                    print line
                     keyword1file.write(m.group('keyword1') + '\n')
                 previousLine = line
 print keyword1file.name
@@ -37,7 +37,7 @@ for subdir, dirs, filenames in os.walk(filepath):
         absoluteFilePath = os.path.join(subdir, filename)
         print('process:' + absoluteFilePath)
         with open(absoluteFilePath) as file:
-            for line in file.readlines():   
+            for line in file:   
                 m = re.search(keyword2,line)
                 if m == None:
                     continue;
