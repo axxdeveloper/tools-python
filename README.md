@@ -26,3 +26,7 @@ Ex. python search_keyword.py D:\logs\ "Exception.* clientJID=(?P\<keyword1\>.+)/
 ## print_keyword_only.py
 Search specified keyword regular expression<br />
 Ex. python print_keyword.py D:\logs "=clientJID=(?P<keyword>.+)/.+"
+## testnginx_XXX.py
+### testnginx_location.py
+Test nginx location<br />
+Ex. python testnginx_location.py /
